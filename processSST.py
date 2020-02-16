@@ -52,6 +52,9 @@ if __name__ == '__main__':
                     months[M][r,c]  = int(line[6*c:6*c+6])
                 r += 1
 
+    # At this point there will be 12 Numpy arrays, one for each month, of 180x360
+    # So, if you want to process March's data, use months[3]
+
     # Rest of file generates images
     # If unwanted, comment out by placing triple quotes on next line and last line of file
     # The raw TIFF is directly comparable to the input data and stored in an int16 greyscale TIFF
